@@ -15,7 +15,7 @@
 
 \maketitle
 \begin{abstract}
-The purpose of this report is to show equivalence between stochastic gradient descent with added standard normal noise to sampling from a Gibbs distribution defined over the solution space. We can then directly extend this to perform Simulated Annealing. SA is a technique that in theory finds global minima given certain annealing schedules, but in practice is mostly used for avoiding poor local minima by properly exploring the solution space.
+The purpose of this report is to show equivalence between stochastic gradient descent with added Gaussian noise to sampling from a Gibbs distribution defined over the solution space. We can then directly extend this to perform Simulated Annealing. SA is a technique that in theory finds global minima given certain annealing schedules, but in practice is mostly used for avoiding poor local minima by properly exploring the solution space.
 \end{abstract}
 
 \section{Preface}
@@ -39,7 +39,7 @@ Starting from equation \ref{SGLD}, and using the definition of the Gibbs distrib
           &= \theta_k - \tau' \frac{1}{T|\mathcal{I}|}\sum_{i \in \mathcal{I}} \nabla_{\theta}R(\bold{x}_i, \theta)|_{\theta = \theta_k} + \sqrt{2\tau'}\bold{z}_k\\
           &= \theta_k - \tau \frac{1}{|\mathcal{I}|}\sum_{i \in \mathcal{I}} \nabla_{\theta}R(\bold{x}_i, \theta)|_{\theta = \theta_k} + \sqrt{2T\tau}\bold{z}_k\\
 \end{align*}
-Where we defined $\tau := \frac{\tau'}{T}$. Which proves that performing SGD with added standard normal noise is equivalent to sampling from a Gibbs distribution over the solution space. The amount of noise that is added directly determines which Gibbs distribution we are sampling from.
+Where we defined $\tau := \frac{\tau'}{T}$. Which proves that performing SGD with added Gaussian noise is equivalent to sampling from a Gibbs distribution over the solution space. The amount of noise that is added directly determines which Gibbs distribution we are sampling from.
 
 \section{Simulated annealing}
 SA is an algorithm to find global optima of some function. Although SA is quite a general algorithm, we will now look at a specific version of SA. In our problem, we are trying to find a minima of $R(X, \theta)$. We proceed by using the previously defined family of density functions. For every member of this family, its maxima correspond to the minima of the risk function. It also also interesting to look at the limiting forms of the distributions. When $T\rightarrow \infty$, the distributions converges to the uniform distribution over all solutions. As $T \rightarrow 0$, the distributions converge to the uniform distribution over the minimal risk solutions. The aforementioned SGLD algorithm now enables us to sample from every such distribution, when given a temperature. Theoretically it is now possible to use a low termpature and sample (close to) global maximima. However, the mixing time will become a practical burden. To ameliorate this, we can instead use a specific decaying temperature schedule to still produce global maxima, but even still, this procedure is computationally costly. In practice, we use a faster temperature decaying schedule, and can only hope for low risk solutions.
