@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+
+\bibitem{welling2011bayesian}
+Max Welling and Yee~W Teh.
+\newblock Bayesian learning via stochastic gradient langevin dynamics.
+\newblock In {\em Proceedings of the 28th international conference on machine
+  learning (ICML-11)}, pages 681--688. Citeseer, 2011.
+
+\end{thebibliography}
