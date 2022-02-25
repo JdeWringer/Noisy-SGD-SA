@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.26)  20 JUL 2021 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.4.26)  25 FEB 2022 13:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -275,22 +275,22 @@ Underfull \hbox (badness 2495) in paragraph at lines 27--27
 <src/swiss_roll.png, id=22, 399.4925pt x 252.945pt>
 File: src/swiss_roll.png Graphic file (type png)
 <use src/swiss_roll.png>
-Package pdftex.def Info: src/swiss_roll.png  used on input line 53.
+Package pdftex.def Info: src/swiss_roll.png  used on input line 52.
 (pdftex.def)             Requested size: 245.24199pt x 155.28043pt.
 <src/loss.png, id=24, 378.41376pt x 262.9825pt>
 File: src/loss.png Graphic file (type png)
 <use src/loss.png>
-Package pdftex.def Info: src/loss.png  used on input line 64.
+Package pdftex.def Info: src/loss.png  used on input line 63.
 (pdftex.def)             Requested size: 245.24199pt x 170.43498pt.
 <src/noise_sol.png, id=25, 371.3875pt x 252.945pt>
 File: src/noise_sol.png Graphic file (type png)
 <use src/noise_sol.png>
-Package pdftex.def Info: src/noise_sol.png  used on input line 75.
+Package pdftex.def Info: src/noise_sol.png  used on input line 74.
 (pdftex.def)             Requested size: 245.24199pt x 167.03299pt.
 <src/vanilla_sol.png, id=26, 371.3875pt x 252.945pt>
 File: src/vanilla_sol.png Graphic file (type png)
 <use src/vanilla_sol.png>
-Package pdftex.def Info: src/vanilla_sol.png  used on input line 84.
+Package pdftex.def Info: src/vanilla_sol.png  used on input line 83.
 (pdftex.def)             Requested size: 245.24199pt x 167.03299pt.
 
 (./Report.bbl) [2 <./src/swiss_roll.png> <./src/loss.png>] [3
@@ -303,7 +303,7 @@ Here is how much of TeX's memory you used:
  20085 multiletter control sequences out of 15000+600000
  411951 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,9n,74p,1223b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,9n,74p,1219b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/tex
 live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
 ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texli
@@ -322,7 +322,7 @@ nts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2021/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Report.pdf (3 pages, 375367 bytes).
+Output written on Report.pdf (3 pages, 375534 bytes).
 PDF statistics:
  91 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
